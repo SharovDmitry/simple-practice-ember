@@ -1,7 +1,11 @@
-{{page-title "SimplePracticeEmber"}}
-
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+<Header />
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4 col-lg-2 mt-4">
+      <Sidebar />
+    </div>
+    <div class="col-md-8 col-lg-10">
+      {{outlet}}
+    </div>
+  </div>
+</div>

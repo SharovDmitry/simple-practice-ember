@@ -1,0 +1,36 @@
+<div class="sidebar">
+  <div class="d-flex">
+    <div class="badge bg-secondary rounded-pill circle">1</div>
+    <div>
+      <div class="text-muted ml-1">CLINICIAN</div>
+      <div class="text-primary ml-1">Rob Gross, MFT</div>
+    </div>
+  </div>
+  <div class="d-flex mt-3">
+    <div class="badge bg-secondary rounded-pill circle">2</div>
+    <div>
+      <div class="text-muted ml-1">SELECT A SERVICE</div>
+      {{#if this.sidebar.selected_service}}
+        <div class="text-primary ml-1">{{this.sidebar.selected_service.description}}</div>
+      {{/if}}
+    </div>
+  </div>
+  <div class={{if this.sidebar.selected_service "d-flex mt-3" "d-flex mt-3 disabled"}}>
+    <div class="badge bg-secondary rounded-pill circle">3</div>
+    <div>
+      <div class="text-muted ml-1">SELECT A LOCATION</div>
+    </div>
+  </div>
+  <div class="d-flex mt-3 disabled">
+    <div class="badge bg-secondary rounded-pill circle">4</div>
+    <div>
+      <div class="text-muted ml-1">SELECT DATE & TIME</div>
+    </div>
+  </div>
+  <div class="d-flex mt-3 disabled">
+    <div class="badge bg-secondary rounded-pill circle">5</div>
+    <div>
+      <div class="text-muted ml-1">YOUR INFORMATION</div>
+    </div>
+  </div>
+</div>
